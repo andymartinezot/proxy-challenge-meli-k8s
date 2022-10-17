@@ -63,6 +63,8 @@ Check the Nginx metrics in Prometheus:
 ```
 http://192.168.49.2:30090
 ```
+## Kubernetes diagram
+![Screen Shot 2022-10-17 at 15 00 14](https://user-images.githubusercontent.com/77750560/196249535-cc1810e3-0247-4977-b065-ba7b183c042b.png)
 
 ## Solution diagram
 ![diagram](https://user-images.githubusercontent.com/77750560/194356318-be7cd5b6-4a12-40e6-b48f-263c4ceb9bce.jpg)
@@ -71,3 +73,4 @@ http://192.168.49.2:30090
 * Proxy exclusively created with Nginx
 * The proxy is configured to accept 50000 requests per second.
 * It's possible to filter the requests based on IP addresses (change nginx.conf)
+* Prometheus is collecting data from nginx each 1 minute, It can be changed modifying prometheus_configmap.yaml

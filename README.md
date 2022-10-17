@@ -42,7 +42,7 @@ kubectl apply -f prometheus_service.yaml
 ```
 
 ### Check Reverse Proxy and Metrics
-NOTE: check the node IP address (kubectl get nodes -o wide) and use it in the links, in my case was 192.168.49.2
+NOTE: check the node IP address (kubectl get nodes -o wide) and use it in the links, in my case it was 192.168.49.2
 
 Test the proxy:
 ```
